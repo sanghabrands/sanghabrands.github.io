@@ -804,6 +804,8 @@ textarea::placeholder
 
 .blog-col
 {
+    max-width: 450px;
+
     text-align: left;
 }
 
@@ -849,6 +851,12 @@ textarea::placeholder
     font-style: italic;
 
     -webkit-font-smoothing: antialiased;
+}
+
+.blog-col p
+{
+    max-width: 450px;
+    margin-top: 0;
 }
 
 .service-header
@@ -1607,7 +1615,12 @@ div.packages-item:hover
     text-align: center;
 
     color: white;
-    background-image: linear-gradient(-226deg, #6fec85 0%, #6506c0 43%);
+    background-image: linear-gradient(-152deg, #6506c0 43%, #6fec85 99%);
+}
+
+.free-consultation h1
+{
+    -webkit-font-smoothing: antialiased;
 }
 
 .free-consultation .lead
