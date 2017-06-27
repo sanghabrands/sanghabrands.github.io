@@ -24,6 +24,31 @@
 
 })(jQuery)
 
+;(function ($) {
+
+  $('.mobile-btn').on('click', function(){
+    $(this).toggleClass('is-open');
+    $('body').toggleClass('is-fixed');
+    $('.header-nav-portfolio').toggleClass('is-open');
+  });
+
+
+  $(window).scroll(function() {
+  var scroll = getCurrentScroll();
+    if ( scroll >= 48 && !$('body').hasClass('is-fixed') ) {
+      $('.header-menu-portfolio').addClass('is-scrolling');
+      $('#main-logo-portfolio-text, #main-logo-portfolio').addClass('is-scrolling');
+    } else {
+      $('.header-menu-portfolio').removeClass('is-scrolling');
+          $('#main-logo-portfolio-text, #main-logo-portfolio').removeClass('is-scrolling');
+    }
+});
+
+  function getCurrentScroll() {
+  return window.pageYOffset || document.documentElement.scrollTop;
+  }
+
+})(jQuery)
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -81,6 +106,23 @@ $(function() {
     slidesToScroll: 3,
     arrows: false,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: "unslick"
+      }
+    ]
+  });
+
+})(jQuery)
+;(function ($) {
+
+  $('.portfolio-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,
