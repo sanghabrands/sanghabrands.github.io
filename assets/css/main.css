@@ -286,7 +286,7 @@ html
 
 body
 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'CerebriSans-Light', sans-serif;
 
     overflow-x: hidden;
 
@@ -340,13 +340,13 @@ h1
 
 h1 span
 {
-    color: #6fec85;
+    color: #6506c0;
 }
 
 h2
 {
-    font-size: 34px;
-    font-weight: 400;
+    font-family: 'CerebriSans-Medium';
+    font-size: 32px;
     line-height: 65px;
 
     margin: 0;
@@ -367,8 +367,7 @@ h1.cta-title
 
 p
 {
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 18px;
     line-height: 30px;
 
     margin-bottom: 0;
@@ -711,7 +710,7 @@ textarea::placeholder
     display: -ms-flexbox;
     display:         flex;
 
-    margin: 127px auto;
+    margin: 100px auto;
 }
 
 .benefits-item + .benefits-item
@@ -747,7 +746,7 @@ textarea::placeholder
 
 .benefits-item p
 {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .approach
@@ -767,19 +766,9 @@ textarea::placeholder
     margin-bottom: 45px;
 }
 
-.approach .btn-normal
-{
-    background-color: transparent;
-}
-
-.approach .btn-normal:hover
-{
-    background-color: white;
-}
-
 .blog
 {
-    padding: 100px 0 80px 0;
+    padding: 20px 0 80px 0;
 
     text-align: center;
 }
@@ -787,7 +776,7 @@ textarea::placeholder
 .blog h1
 {
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .blog .btn-normal
@@ -839,13 +828,12 @@ textarea::placeholder
 
 .blog-col h3
 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'CerebriSans-Light', sans-serif;
     font-size: 32px;
-    font-weight: 300;
-    font-style: normal;
     line-height: 50px;
 
     margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .blog-col span
@@ -870,9 +858,9 @@ textarea::placeholder
     padding-top: 164px;
 
     border-bottom: 6px solid black;
-    /*background-image: url('../images/service-pack-bg.png');*/
+    /*background-image: url('../images/bg-pattern.png');*/
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: 0 500px;
     background-size: contain;
 }
 
@@ -908,7 +896,6 @@ textarea::placeholder
 .service-header p
 {
     font-size: 22px;
-    font-weight: 300;
     line-height: 34px;
 
     max-width: 667px;
@@ -974,7 +961,7 @@ textarea::placeholder
 
 .content-sidebar
 {
-    font-size: 17px;
+    font-size: 18px;
 
     width: 450px;
     margin-left: 110px;
@@ -1104,7 +1091,7 @@ textarea::placeholder
 .services-boxes
 {
     margin-top: 113px;
-    margin-bottom: 49px;
+    margin-bottom: 35px;
 }
 
 .services-box
@@ -1123,8 +1110,8 @@ textarea::placeholder
 
 .services-box h4
 {
-    font-size: 17px;
-    font-weight: 900;
+    font-family: 'CerebriSans-Bold';
+    font-size: 18px;
 
     margin: 0;
 
@@ -1164,9 +1151,7 @@ textarea::placeholder
 
 .services-box p
 {
-    font-family: 'Lato', sans-serif;
     font-size: 24px;
-    font-style: italic;
 
     margin: 0;
 
@@ -1184,7 +1169,7 @@ textarea::placeholder
 
 .services-box li
 {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 30px;
 
@@ -1300,10 +1285,9 @@ textarea::placeholder
 
 .case-study-project p
 {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-style: italic;
-    line-height: 40px;
+    font-family: 'CerebriSans-Light', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
 
     letter-spacing: 0;
 }
@@ -1729,10 +1713,20 @@ textarea::placeholder
     padding-top: 80px;
 
     background-color: #f6f6f8;
-    background-image: url('../images/freebie-bg.png');
+    background-image: url('../images/freebie-bg-writting.png');
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: top right;
     background-size: contain;
+}
+
+.freebie h1
+{
+    max-width: 530px;
+}
+
+.freebie h1 span
+{
+    color: #6506c0;
 }
 
 .freebie .lead
@@ -1768,7 +1762,6 @@ textarea::placeholder
 .freebie-form button
 {
     font-size: 20px;
-    font-weight: 900;
 
     height: 49px;
     margin-left: 10px;
@@ -1777,12 +1770,10 @@ textarea::placeholder
 
     vertical-align: top;
     letter-spacing: 2.73px;
-    text-transform: uppercase;
 
-    color: black;
+    color: white;
     border: 0;
     border-radius: 2.5px;
-    background-color: #6fec85;
 }
 
 .freebie-form .confirmation-message
@@ -1919,13 +1910,15 @@ div.packages-item:hover
 
 .free-consultation
 {
+    margin-bottom: 60px;
     padding: 80px 0 63px 0;
 
     text-align: center;
 
     color: white;
     background: linear-gradient(49deg, #9d37ff 0%, #6506c0 75%);
-    background-image: url('../../assets/images/bg-mac2.jpg');
+    background-image: url('../../assets/images/bg-freeconsultation.jpg');
+    background-repeat: no-repeat;
     background-position: top center;
 }
 
@@ -1946,6 +1939,7 @@ div.packages-item:hover
 
 .free-consultation .consultation-text
 {
+    font-family: 'CerebriSans-Bold';
     font-size: 22px;
     font-weight: 700;
 
@@ -1955,14 +1949,9 @@ div.packages-item:hover
     -webkit-font-smoothing: antialiased;
 }
 
-.free-consultation span
-{
-    color: #6fec85;
-}
-
 .testimonials
 {
-    font-size: 24px;
+    font-size: 22px;
 
     height: auto;
     padding: 100px 0;
@@ -2039,10 +2028,8 @@ div.packages-item:hover
 
 .testimonial-text p
 {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    font-style: italic;
+    font-family: 'CerebriSans-Light', sans-serif;
+    font-size: 22px;
     line-height: 36px;
 
     position: relative;
@@ -2051,21 +2038,20 @@ div.packages-item:hover
 
 .testimonial-text .testimonial-subheading
 {
-    font-family: 'Muli', sans-serif;
-    font-size: 17px;
+    font-family: 'CerebriSans-Light', sans-serif;
+    font-size: 18px;
     font-style: normal;
     line-height: 32px;
 
     margin: 0;
 
     letter-spacing: 3px;
-    text-transform: uppercase;
 }
 
 .testimonial-text .testimonial-heading
 {
-    font-family: 'Muli', sans-serif;
-    font-size: 17px;
+    font-family: 'CerebriSans-Bold', sans-serif;
+    font-size: 18px;
     font-weight: 900;
     font-style: normal;
     line-height: 32px;
@@ -2078,7 +2064,7 @@ div.packages-item:hover
 
 .testimonial-text .testimonial-author
 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'CerebriSans-Light', sans-serif;
     font-size: 17px;
     font-style: normal;
 
@@ -2087,7 +2073,7 @@ div.packages-item:hover
 
 .testimonial-text .testimonial-author span
 {
-    font-weight: 700;
+    font-family: 'CerebriSans-Medium';
 }
 
 .testimonial-avatar img
@@ -2125,7 +2111,7 @@ div.packages-item:hover
     text-align: center;
 
     color: white;
-    background-image: linear-gradient(49deg, #9d37ff 0%, #6506c0 75%);
+    background: linear-gradient(37deg, #6506c0 42%, #8f2bef 100%);
 }
 
 .contact h1
@@ -2757,6 +2743,9 @@ div.other-packages-item:hover
 
 .header-nav
 {
+    font-family: 'CerebriSans-Medium';
+    font-size: 18px;
+
     display: inline-block;
 
     margin: 25px 0 0 0;
@@ -2784,7 +2773,7 @@ div.other-packages-item:hover
 
 .header-nav-link span
 {
-    color: #6fec85;
+    color: black;
 }
 
 .header-nav-link::after
@@ -2802,7 +2791,7 @@ div.other-packages-item:hover
 
     opacity: 0;
     border-radius: 2.5px;
-    background-color: #6fec85;
+    background-color: #6506c0;
 }
 
 .header-nav-link:hover::after
@@ -2826,12 +2815,12 @@ div.other-packages-item:hover
 
 .header-nav-link.call-link:hover
 {
-    color: #6506c0;
+    color: black;
 }
 
 .header-nav-link.call-link:hover::after
 {
-    background-color: #6506c0;
+    background-color: #6fec85;
 }
 
 .header-nav-link.call-link::after
@@ -2849,7 +2838,7 @@ div.other-packages-item:hover
 
     opacity: 1;
     border-radius: 2.5px;
-    background-color: #6fec85;
+    background-color: #6506c0;
 }
 
 .header-nav-link.call-link span
@@ -2972,7 +2961,7 @@ div.other-packages-item:hover
 
 .btn-normal
 {
-    font-family: 'CerebriSans-Bold';
+    font-family: 'CerebriSans-Medium';
     font-size: 20px;
     font-weight: 900;
 
@@ -2989,19 +2978,12 @@ div.other-packages-item:hover
     color: black;
     border: 2px solid #000;
     border-radius: 5px;
-    background: white;
     box-shadow: 3px 5px 4px 0 rgba(0, 0, 0, .14);
 }
 
 .btn-normal:hover
 {
-    border-color: #6fec85;
-    box-shadow: 12px 17px 8px 0 rgba(0, 0, 0, .2);
-}
-
-.btn-normal:active
-{
-    background-color: #6fec85;
+    border-color: #6506c0;
 }
 
 .btn-variant
@@ -3039,7 +3021,7 @@ div.other-packages-item:hover
 
 .btn-green
 {
-    font-family: 'CerebriSans-Bold';
+    font-family: 'CerebriSans-Medium';
     font-size: 20px;
     font-weight: 900;
 
@@ -3047,23 +3029,21 @@ div.other-packages-item:hover
 
     min-width: 265px;
     height: 59px;
-    padding: 18px 40px 0 40px;
+    padding: 16px 40px 0 40px;
 
     text-align: center;
     letter-spacing: 2.73px;
-    text-transform: uppercase;
 
-    color: black;
+    color: white;
     border: 0;
     border-color: #6fec85;
     border-radius: 5px;
-    background-color: #6fec85;
+    background-color: black;
 }
 
 .btn-green:hover
 {
-    background-color: #41e95e;
-    box-shadow: 12px 17px 8px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 24px rgba(50, 50, 50, .5);
 }
 
 .btn-green:active
@@ -3436,6 +3416,17 @@ div.other-packages-item:hover
     .mobile-btn
     {
         display: block;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .freebie
+    {
+        height: auto;
+        padding-bottom: 50px;
+
+        background-image: none;
     }
 }
 
@@ -3859,16 +3850,5 @@ div.other-packages-item:hover
 
         width: 100%;
         padding: 19px 20px 0 20px;
-    }
-}
-
-@media (max-width: 600px)
-{
-    .freebie
-    {
-        height: auto;
-        padding-bottom: 50px;
-
-        background-image: none;
     }
 }
