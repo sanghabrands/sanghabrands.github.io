@@ -74,7 +74,7 @@ abbr[title]
 b,
 strong
 {
-    font-weight: bold;
+    font-family: 'CerebriSans-Medium';
 }
 
 dfn
@@ -367,6 +367,7 @@ h1.cta-title
 
 p
 {
+    font-family: 'CerebriSans-Light';
     font-size: 18px;
     line-height: 30px;
 
@@ -1057,6 +1058,8 @@ textarea::placeholder
     margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 0;
+
+    background-color: #fff;
 }
 
 .sidebar-amount
