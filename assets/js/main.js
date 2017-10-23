@@ -117,21 +117,23 @@ $(function() {
 })(jQuery)
 ;(function ($) {
 
-  $('.portfolio-carousel').slick({
+  $('.carousel-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: "unslick"
-      }
-    ]
+    arrows: false,
+    fade: true
+  });
+
+  $('.carousel-arrow-next').on('click', function(){
+    $('.carousel-carousel').slick('slickNext')
+  });
+
+  $('.carousel-arrow-prev').on('click', function(){
+    $('.carousel-carousel').slick('slickPrev')
   });
 
 })(jQuery)
+
 ;(function ($) {
 
   $('select').selectric();
