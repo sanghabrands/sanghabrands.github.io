@@ -330,14 +330,11 @@ button
 h1
 {
     font-family: 'CerebriSans-Bold';
-    font-size: 68px;
-    font-weight: normal;
+    font-size: 32px;
+    font-weight: 900;
     font-style: normal;
-    line-height: 85px;
 
     margin: 0 0 -20px 0;
-
-    letter-spacing: 0;
 }
 
 h1 span
@@ -354,14 +351,11 @@ h2
     line-height: 65px;
 
     margin: 0;
-
-    letter-spacing: 0;
 }
 
 h1.cta-title
 {
     font-size: 48px;
-    font-weight: 600;
     line-height: 65px;
 
     margin: 0;
@@ -728,7 +722,7 @@ textarea::placeholder
     display: -ms-flexbox;
     display:         flex;
 
-    margin: 100px auto;
+    margin: 100px auto 0 auto;
 }
 
 .benefits-item + .benefits-item
@@ -746,12 +740,12 @@ textarea::placeholder
 .benefits-item img
 {
     min-height: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .benefits-item h2
 {
-    line-height: 43px;
+    line-height: 40px;
 
     max-width: 200px;
     margin: 0 auto;
@@ -799,7 +793,7 @@ textarea::placeholder
 
 .blog .btn-normal
 {
-    margin-top: 58px;
+    margin-top: 35px;
 }
 
 .blog-columns
@@ -851,17 +845,15 @@ textarea::placeholder
     line-height: 50px;
 
     margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
-.blog-col span
+.blog-col h4
 {
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
-    font-weight: 300;
-    font-style: italic;
+    font-family: 'CerebriSans-Medium', sans-serif;
+    font-size: 14px;
 
-    -webkit-font-smoothing: antialiased;
+    margin: 8px 0 20px 0;
 }
 
 .blog-col p
@@ -1112,6 +1104,7 @@ textarea::placeholder
 .services-content h1
 {
     padding-top: 245px;
+    padding-bottom: 100px;
 }
 
 .services-boxes
@@ -1126,7 +1119,6 @@ textarea::placeholder
     display: -ms-flexbox;
     display:         flex;
 
-    padding-top: 63px;
     padding-bottom: 55px;
 
     -webkit-justify-content: space-between;
@@ -1136,48 +1128,17 @@ textarea::placeholder
 
 .services-box h4
 {
-    font-family: 'CerebriSans-Bold';
-    font-size: 18px;
+    font-family: 'CerebriSans-Light';
+    font-size: 48px;
 
-    margin: 0;
-
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.services-box h4:after
-{
-    display: block;
-
-    width: 31px;
-    height: 4px;
-    margin-top: 16px;
-    margin-bottom: 29px;
-
-    content: '';
-
-    border-radius: 2.5px;
-    background-color: #6fec85;
-}
-
-.services-box h4.title-digital:after
-{
-    background-color: #6506c0;
-}
-
-.services-box h4.title-branding:after
-{
-    background-color: #de0a75;
-}
-
-.services-box h4.title-business:after
-{
-    background-color: black;
+    margin: 0 0 35px 0;
 }
 
 .services-box p
 {
-    font-size: 24px;
+    font-family: 'CerebriSans-Bold';
+    font-size: 17px;
+    font-weight: normal;
 
     margin: 0;
 
@@ -1187,7 +1148,7 @@ textarea::placeholder
 .services-box ul
 {
     max-width: 370px;
-    margin: 53px 0 0 0;
+    margin: 35px 0 0 0;
     padding: 0;
 
     list-style: none;
@@ -1195,7 +1156,7 @@ textarea::placeholder
 
 .services-box li
 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 30px;
 
@@ -1284,7 +1245,7 @@ textarea::placeholder
 
 .case-projects
 {
-    margin-top: 80px;
+    margin-top: 45px;
 }
 
 .case-projects-row
@@ -1300,7 +1261,7 @@ textarea::placeholder
 
 .case-projects-row:last-of-type
 {
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 .case-study-project
@@ -2022,7 +1983,6 @@ div.packages-item:hover
     text-align: center;
 
     color: white;
-    background: linear-gradient(49deg, #9d37ff 0%, #6506c0 75%);
     background-image: url('../../assets/images/bg-freeconsultation.jpg');
     background-repeat: no-repeat;
     background-position: top center;
@@ -2035,8 +1995,6 @@ div.packages-item:hover
 
 .free-consultation .lead
 {
-    font-weight: 400;
-
     max-width: 896px;
     margin: 42px auto auto auto;
 
@@ -2045,12 +2003,14 @@ div.packages-item:hover
 
 .free-consultation .consultation-text
 {
-    font-family: 'CerebriSans-Bold';
+    font-family: 'CerebriSans-Medium';
     font-size: 22px;
-    font-weight: 700;
+    font-weight: normal;
 
-    margin-top: 46px;
-    margin-bottom: 54px;
+    max-width: 600px;
+    margin: 46px auto 54px auto;
+
+    text-align: center;
 
     -webkit-font-smoothing: antialiased;
 }
@@ -2158,7 +2118,6 @@ div.packages-item:hover
 {
     font-family: 'CerebriSans-Bold', sans-serif;
     font-size: 18px;
-    font-weight: 900;
     font-style: normal;
     line-height: 32px;
 
@@ -2262,14 +2221,13 @@ div.packages-item:hover
 }
 
 .contact-form input,
-.contact-form select,
-.contact-form .selectric
+.contact-form select
 {
     font-size: 17px;
 
     min-width: 450px;
     height: 56px;
-    padding-left: 21px;
+    padding: 4px 0 0 21px;
 
     color: white;
     border: 1px solid #fff;
@@ -2278,34 +2236,44 @@ div.packages-item:hover
 }
 
 .contact-form input::-webkit-input-placeholder,
-.contact-form select::-webkit-input-placeholder,
-.contact-form .selectric::-webkit-input-placeholder
+.contact-form select::-webkit-input-placeholder
 {
     opacity: 1;
     color: white;
 }
 
 .contact-form input:-ms-input-placeholder,
-.contact-form select:-ms-input-placeholder,
-.contact-form .selectric:-ms-input-placeholder
+.contact-form select:-ms-input-placeholder
 {
     opacity: 1;
     color: white;
 }
 
 .contact-form input::placeholder,
-.contact-form select::placeholder,
-.contact-form .selectric::placeholder
+.contact-form select::placeholder
 {
     opacity: 1;
     color: white;
 }
 
 .contact-form input:last-child,
-.contact-form select:last-child,
-.contact-form .selectric:last-child
+.contact-form select:last-child
 {
     margin-left: 25px;
+}
+
+.contact-form .selectric
+{
+    font-size: 17px;
+
+    min-width: 450px;
+    height: 56px;
+    padding: 1px 0 0 21px;
+
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 2.5px;
+    background-color: transparent;
 }
 
 .contact-form select
@@ -2348,6 +2316,11 @@ div.packages-item:hover
     color: white;
 }
 
+.contact-form .btn-normal
+{
+    border-radius: 0;
+}
+
 .contact-form .btn-green
 {
     margin-top: 45px;
@@ -2372,31 +2345,24 @@ div.packages-item:hover
     margin-bottom: 30px;
 }
 
-.portafolio
+.work
 {
-    padding: 65px 0 35px 0;
+    padding: 55px 0 55px 0;
 }
 
-.portafolio h1
-{
-    padding-top: 20px;
-}
-
-.portafolio-container
+.work-container
 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-
-    margin-top: 51px;
 }
 
-.portafolio-carousel
+.work-carousel
 {
     margin: 51px -15px 0 -15px;
 }
 
-.portafolio-item
+.work-item
 {
     position: relative;
 
@@ -2411,7 +2377,7 @@ div.packages-item:hover
     background-size: cover;
 }
 
-.portafolio-item:hover .portafolio-item-content
+.work-item:hover .work-item-content
 {
     transition: opacity 300ms ease-in-out;
     pointer-events: auto;
@@ -2419,7 +2385,7 @@ div.packages-item:hover
     opacity: 1;
 }
 
-.portafolio-item-content
+.work-item-content
 {
     position: absolute;
     top: 0;
@@ -2451,7 +2417,7 @@ div.packages-item:hover
     -webkit-font-smoothing: antialiased;
 }
 
-.portafolio-item-content h4
+.work-item-content h4
 {
     font-family: 'CerebriSans-Medium', sans-serif;
     font-size: 17px;
@@ -2463,7 +2429,7 @@ div.packages-item:hover
     text-transform: uppercase;
 }
 
-.portafolio-item-content h4::after
+.work-item-content h4::after
 {
     display: block;
 
@@ -2477,7 +2443,7 @@ div.packages-item:hover
     background-color: #6fec85;
 }
 
-.portafolio-item-content ul
+.work-item-content ul
 {
     margin: 0;
     padding: 0;
@@ -2485,7 +2451,7 @@ div.packages-item:hover
     list-style: none;
 }
 
-.portafolio-item-content li
+.work-item-content li
 {
     font-family: 'CerebriSans-Bold', sans-serif;
     font-size: 12px;
@@ -2497,12 +2463,12 @@ div.packages-item:hover
     color: #fff;
 }
 
-.portafolio-carousel
+.work-carousel
 {
     visibility: hidden;
 }
 
-.portafolio-carousel.slick-initialized
+.work-carousel.slick-initialized
 {
     visibility: visible;
 }
@@ -2680,10 +2646,12 @@ div.other-packages-item:hover
 
 .header h1
 {
+    font-size: 48px;
     font-weight: 900;
 
-    max-width: 620px;
-    padding-top: 170px;
+    padding-top: 235px;
+
+    letter-spacing: 0;
 }
 
 .header p
@@ -2865,7 +2833,7 @@ div.other-packages-item:hover
 
 .header-nav-link + .header-nav-link
 {
-    margin-left: 24px;
+    margin-left: 45px;
 }
 
 .header-nav-link
@@ -2875,8 +2843,6 @@ div.other-packages-item:hover
     position: relative;
 
     display: inline-block;
-
-    letter-spacing: 1.20px;
 }
 
 .header-nav-link span
@@ -2917,7 +2883,6 @@ div.other-packages-item:hover
 
     margin-left: 34px;
 
-    letter-spacing: 2.32px;
     text-transform: uppercase;
 }
 
@@ -3062,6 +3027,7 @@ div.other-packages-item:hover
 }
 
 .social-icon:hover #icon-instagram,
+.social-icon:hover #icon-linkedin,
 .social-icon:hover #icon-facebook
 {
     fill: #6fec85;
@@ -3069,31 +3035,34 @@ div.other-packages-item:hover
 
 .btn-normal
 {
-    font-family: 'CerebriSans-Medium';
-    font-size: 20px;
+    font-family: 'CerebriSans-Bold';
+    font-size: 14px;
 
     display: inline-block;
 
     min-width: 265px;
     height: 59px;
     margin: 0 auto;
-    padding: 15px 40px 0 40px;
+    padding: 19px 30px 0 30px;
 
     text-align: center;
     letter-spacing: 2.73px;
+    text-transform: uppercase;
 
     color: black;
     border: 2px solid #000;
-    border-radius: 5px 0 5px 0;
     background-color: #fff;
-    box-shadow: 3px 2px 0 0 rgba(0, 0, 0, .14);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 
 .btn-normal:hover
 {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+
     color: #6506c0;
     border-color: #6506c0;
-    box-shadow: 3px 2px 0 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 
 .btn-variant
@@ -3113,7 +3082,6 @@ div.other-packages-item:hover
 
     color: black;
     border: 2px solid #6fec85;
-    border-radius: 5px;
     background-color: rgba(111, 236, 133, .2);
     box-shadow: 3px 5px 4px 0 rgba(0, 0, 0, .14);
 }
@@ -3145,7 +3113,6 @@ div.other-packages-item:hover
     letter-spacing: 2.73px;
 
     color: white;
-    border-radius: 5px;
     background-color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -3452,19 +3419,24 @@ div.other-packages-item:hover
     }
 
     .contact-form input,
-    .contact-form select,
+    .contact-form select
+    {
+        width: 100%;
+        min-width: inherit;
+        margin-bottom: 25px;
+    }
+
+    .contact-form input:last-child,
+    .contact-form select:last-child
+    {
+        margin-left: 0;
+    }
+
     .contact-form .selectric
     {
         width: 100%;
         min-width: inherit;
-        margin-bottom: 35px;
-    }
-
-    .contact-form input:last-child,
-    .contact-form select:last-child,
-    .contact-form .selectric:last-child
-    {
-        margin-left: 0;
+        margin-bottom: 25px;
     }
 
     .contact-form textarea
@@ -3486,7 +3458,7 @@ div.other-packages-item:hover
         margin-bottom: 0;
     }
 
-    .portafolio-item
+    .work-item
     {
         height: 195px;
     }
@@ -3592,7 +3564,7 @@ div.other-packages-item:hover
     {
                 flex-direction: column;
 
-        margin-top: 50px;
+        margin: 55px auto 65px auto;
 
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
@@ -3639,7 +3611,13 @@ div.other-packages-item:hover
 
     .blog
     {
-        padding: 50px 0;
+        padding: 0 0 55px 0;
+    }
+
+    .blog h1
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .blog-columns
@@ -3659,6 +3637,16 @@ div.other-packages-item:hover
     .blog-col img
     {
         width: 100%;
+    }
+
+    .blog-col h3
+    {
+        line-height: 40px;
+    }
+
+    .blog-col h4
+    {
+        margin-bottom: 10px;
     }
 
     .service-header
@@ -3844,15 +3832,21 @@ div.other-packages-item:hover
         padding-top: 50px;
     }
 
+    .free-consultation
+    {
+        margin-bottom: 55px;
+        padding: 55px 0;
+    }
+
     .testimonials h1
     {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     .testimonials
     {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin: 0;
+        padding: 55px 0;
     }
 
     .testimonial-arrow
@@ -3860,19 +3854,36 @@ div.other-packages-item:hover
         top: 70px;
     }
 
+    .testimonial-carousel
+    {
+        margin-top: 0;
+    }
+
     .testimonial-text p
     {
-        font-size: 19px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .testimonial-text .testimonial-subheading
     {
-        font-size: 14px;
+        display: none;
     }
 
     .testimonial-text .testimonial-heading
     {
         font-size: 14px;
+        line-height: 26px;
+
+        margin: 10px 0 0 0;
+    }
+
+    .testimonial-text .testimonial-author
+    {
+        font-size: 14px;
+        line-height: 23px;
+
+        margin-top: 20px;
     }
 
     .testimonial-avatar img
@@ -3883,7 +3894,12 @@ div.other-packages-item:hover
 
     .contact
     {
-        padding-top: 50px;
+        padding: 55px 0 25px 0;
+    }
+
+    .contact h1
+    {
+        margin: 0 auto 25px 0;
     }
 
     .contact .confirmation-message
@@ -3896,7 +3912,17 @@ div.other-packages-item:hover
         margin-bottom: 50px;
     }
 
-    .portafolio-container
+    .contact-form-row:last-of-type
+    {
+        margin-bottom: 0;
+    }
+
+    .work
+    {
+        padding: 0 0 15px 0;
+    }
+
+    .work-container
     {
                 flex-direction: column;
 
@@ -3904,18 +3930,18 @@ div.other-packages-item:hover
             -ms-flex-direction: column;
     }
 
-    .portafolio-item
+    .work-item
     {
         height: 230px;
         margin: 0 auto;
     }
 
-    .portafolio-item + .portafolio-item
+    .work-item + .work-item
     {
         margin-top: 30px;
     }
 
-    .portafolio-carousel
+    .work-carousel
     {
         visibility: visible;
     }
@@ -3954,6 +3980,11 @@ div.other-packages-item:hover
         background-size: cover;
     }
 
+    .header h1
+    {
+        padding-top: 170px;
+    }
+
     .header p
     {
         margin-bottom: 40px;
@@ -3968,7 +3999,9 @@ div.other-packages-item:hover
     {
                 flex-direction: column;
 
-        padding: 30px 0;
+        padding: 10px 15px;
+
+        text-align: center;
 
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
@@ -3976,15 +4009,21 @@ div.other-packages-item:hover
 
     .footer-info
     {
+        display: block;
+
         margin-bottom: 20px;
+    }
+
+    .footer-social
+    {
+        margin: 0 auto;
     }
 
     .btn-normal
     {
-        font-size: 16px;
+        padding: 19px 35px 0 35px;
 
-        width: 100%;
-        padding: 19px 20px 0 20px;
+        text-transform: uppercase;
     }
 
     .btn-variant

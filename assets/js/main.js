@@ -101,22 +101,6 @@ $(function() {
 });
 ;(function ($) {
 
-  $('.portafolio-carousel').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    arrows: false,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: "unslick"
-      }
-    ]
-  });
-
-})(jQuery)
-;(function ($) {
-
   $('.carousel-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -167,6 +151,23 @@ $(function() {
 
   $('.testimonial-arrow-prev').on('click', function(){
     $('.testimonial-carousel').slick('slickPrev')
+  });
+
+})(jQuery)
+
+;(function ($) {
+
+  $('.work-carousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: "unslick"
+      }
+    ]
   });
 
 })(jQuery)
