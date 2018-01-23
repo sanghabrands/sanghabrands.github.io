@@ -292,7 +292,7 @@ body
 
     height: 200vh;
 
-    color: #000;
+    color: #1b1b1c;
     background: #fff;
 }
 
@@ -333,8 +333,9 @@ h1
     font-size: 40px;
     font-weight: normal;
     font-style: normal;
+    line-height: 50px;
 
-    margin: 0 0 -10px 0;
+    margin: 0 0 15px 0;
 }
 
 h1 span
@@ -378,8 +379,7 @@ p
 
 p.lead
 {
-    font-size: 22px;
-    line-height: 34px;
+    margin: 0;
 }
 
 .phrase
@@ -465,9 +465,7 @@ textarea::placeholder
 
 .confirmation-message
 {
-    font-size: 17px;
-    font-weight: normal;
-    font-style: normal;
+    font-size: 14px;
 
     display: block;
 
@@ -479,12 +477,12 @@ textarea::placeholder
 .confirmation-message::before
 {
     position: relative;
-    top: -1px;
+    top: -3px;
 
     display: inline-block;
 
     width: 15px;
-    height: 6px;
+    height: 2px;
     margin-right: 12px;
 
     content: '';
@@ -716,13 +714,16 @@ textarea::placeholder
     }
 }
 
+.benefits
+{
+    padding: 80px 0 0 0;
+}
+
 .benefits .container
 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-
-    margin: 80px auto 0 auto;
 }
 
 .benefits-item + .benefits-item
@@ -745,7 +746,8 @@ textarea::placeholder
 
 .benefits-item h2
 {
-    font-family: 'CerebriSans-Light', sans-serif;
+    font-family: 'CerebriSans-Medium', sans-serif;
+    font-size: 17px;
     font-weight: normal;
     font-style: normal;
 
@@ -760,13 +762,14 @@ textarea::placeholder
 
 .benefits-item p
 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .approach
 {
-    min-height: 500px;
-    padding: 80px 0 80px 0;
+    height: 500px;
+    margin-top: 80px;
+    padding: 80px 0 0 0;
 
     background-image: url('../images/approach-bg.jpg');
     background-position: center right;
@@ -776,13 +779,11 @@ textarea::placeholder
 .approach .lead
 {
     max-width: 305px;
-    margin-top: 42px;
-    margin-bottom: 45px;
 }
 
 .blog
 {
-    padding: 80px 0;
+    padding-top: 80px;
 
     text-align: center;
 }
@@ -894,7 +895,7 @@ textarea::placeholder
     display: inline-block;
 
     width: 30px;
-    height: 4px;
+    height: 2px;
     margin-top: 0;
     margin-bottom: 3px;
     margin-left: 8px;
@@ -916,6 +917,11 @@ textarea::placeholder
     margin-bottom: 20px;
 }
 
+.service-content
+{
+    margin-bottom: 40px;
+}
+
 .service-content .container
 {
     display: -webkit-flex;
@@ -925,15 +931,17 @@ textarea::placeholder
 
 .service-content h4
 {
-    font-family: CerebriSans-Medium;
+    font-family: CerebriSans-Bold;
     font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
 
     display: inline-block;
 
     margin-top: 0;
     margin-bottom: 15px;
 
-    letter-spacing: 2px;
+    letter-spacing: 2.73px;
     text-transform: uppercase;
 }
 
@@ -942,7 +950,7 @@ textarea::placeholder
     display: block;
 
     width: 30px;
-    height: 4px;
+    height: 2px;
     margin-top: 12px;
     margin-bottom: 3px;
 
@@ -955,7 +963,6 @@ textarea::placeholder
 .content-container
 {
     max-width: 370px;
-    padding: 35px 0;
 }
 
 .content-container p
@@ -999,7 +1006,7 @@ textarea::placeholder
     width: 450px;
     margin-top: 30px;
     margin-left: 110px;
-    padding: 35px 40px 0 40px;
+    padding: 35px 40px 35px 40px;
 
     border: 1px solid #6506c0;
     border-radius: 2.5px;
@@ -1022,10 +1029,11 @@ textarea::placeholder
 .content-sidebar li
 {
     font-size: 17px;
-    line-height: 32px;
+    line-height: 28px;
 
     position: relative;
 
+    margin-bottom: 10px;
     padding-left: 24px;
 
     list-style: none;
@@ -1119,7 +1127,7 @@ textarea::placeholder
     display: block;
 
     width: 100%;
-    height: 4px;
+    height: 2px;
     margin-top: 8px;
     margin-bottom: 24px;
 
@@ -1266,7 +1274,8 @@ textarea::placeholder
 
     display: block;
 
-    margin-top: 59px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 
     letter-spacing: 0;
 }
@@ -1802,19 +1811,23 @@ textarea::placeholder
 
 .freebie
 {
-    height: 500px;
-    padding-top: 80px;
+    margin-top: 80px;
+}
 
-    background-color: #f6f6f8;
-    background-image: url('../images/freebie-bg-writting.png');
+.freebie .container
+{
+    height: 405px;
+
+    background-image: url('../images/icon-brandingBrief.png');
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: contain;
+    background-position: 565px 0;
+    background-size: 357px 405px;
 }
 
 .freebie h1
 {
-    max-width: 530px;
+    max-width: 620px;
+    padding-top: 80px;
 }
 
 .freebie h1 span
@@ -1824,8 +1837,7 @@ textarea::placeholder
 
 .freebie .lead
 {
-    max-width: 600px;
-    margin-top: 41px;
+    max-width: 540px;
 }
 
 .freebie-form
@@ -1835,11 +1847,9 @@ textarea::placeholder
 
 .freebie-form input
 {
-    font-size: 17px;
-    font-weight: 300;
-
     width: 211px;
     height: 50px;
+    padding-top: 5px;
     padding-left: 21px;
 
     border: 1px solid #e5e5e5;
@@ -1852,21 +1862,20 @@ textarea::placeholder
     margin-right: 10px;
 }
 
+.freebie-form placeholder
+{
+    color: #888;
+}
+
 .freebie-form button
 {
-    font-size: 20px;
-
-    height: 49px;
+    height: 50px;
     margin-left: 10px;
-    padding: 0 40px;
-    padding-top: 5px;
+    padding-top: 4px;
 
     vertical-align: top;
-    letter-spacing: 2.73px;
 
-    color: white;
     border: 0;
-    border-radius: 2.5px;
 }
 
 .freebie-form .confirmation-message
@@ -1883,21 +1892,22 @@ textarea::placeholder
 
 .packages
 {
-    padding: 112px 0 80px 0;
+    padding-top: 80px;
 
     text-align: center;
 }
 
-.packages h1
+.packages .lead
 {
-    margin-bottom: 35px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    text-align: center;
 }
 
 .packages .lead:last-child
 {
-    font-weight: bold;
-
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .packages .phrase
@@ -1908,8 +1918,6 @@ textarea::placeholder
 
 .packages .lead:nth-child(3)
 {
-    font-weight: 700;
-
     margin-top: 0;
 }
 
@@ -1919,8 +1927,7 @@ textarea::placeholder
     display: -ms-flexbox;
     display:         flex;
 
-    margin-top: 61px;
-    margin-bottom: 56px;
+    margin-top: 40px;
 
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1937,8 +1944,6 @@ textarea::placeholder
 
 .packages-item
 {
-    font-weight: 400;
-
     min-width: 290px;
     height: 415px;
     padding: 32px 0 0 26px;
@@ -1979,10 +1984,12 @@ div.packages-item:hover
 
 .packages-heading
 {
-    font-size: 17px;
-    font-weight: 700;
+    font-family: 'CerebriSans-Medium';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
 
-    letter-spacing: 3px;
+    letter-spacing: 2.73px;
     text-transform: uppercase;
 }
 
@@ -1991,7 +1998,7 @@ div.packages-item:hover
     display: block;
 
     width: 31px;
-    height: 4px;
+    height: 2px;
     margin-top: 14px;
     margin-bottom: 30px;
 
@@ -2003,38 +2010,17 @@ div.packages-item:hover
 
 .free-consultation
 {
+    margin-top: 80px;
     padding: 80px 0 63px 0;
 
     text-align: center;
 
     color: white;
-    background-image: url('../../assets/images/bg-freeconsultation.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-.free-consultation h1
-{
-    -webkit-font-smoothing: antialiased;
-}
-
-.free-consultation .lead
-{
-    max-width: 896px;
-    margin: 42px auto auto auto;
-
-    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(37deg, #6506c0 42%, #8f2bef 100%);
 }
 
 .free-consultation .consultation-text
 {
-    font-family: 'CerebriSans-Medium';
-    font-size: 22px;
-    font-weight: normal;
-
-    max-width: 600px;
-    margin: 46px auto 54px auto;
-
     text-align: center;
 
     -webkit-font-smoothing: antialiased;
@@ -2043,7 +2029,7 @@ div.packages-item:hover
 .testimonials
 {
     height: auto;
-    padding: 80px 0;
+    padding-top: 80px;
 
     cursor: pointer;
 }
@@ -2115,6 +2101,15 @@ div.packages-item:hover
     display:         flex;
 }
 
+.testimonial-avatar img
+{
+    /*    border-radius: 50%;*/
+    width: 254px;
+    max-width: 254px;
+    height: 254px;
+    margin-right: 60px;
+}
+
 .testimonial-text p
 {
     font-family: 'CerebriSans-Light', sans-serif;
@@ -2162,15 +2157,6 @@ div.packages-item:hover
     font-family: 'CerebriSans-Medium';
 }
 
-.testimonial-avatar img
-{
-    /*    border-radius: 50%;*/
-    width: 254px;
-    max-width: 254px;
-    height: 254px;
-    margin-left: 60px;
-}
-
 .slick-slide,
 .slick-slide *
 {
@@ -2192,6 +2178,7 @@ div.packages-item:hover
     position: relative;
 
     min-height: 650px;
+    margin-top: 80px;
     padding: 40px 0;
 
     text-align: center;
@@ -2368,7 +2355,7 @@ div.packages-item:hover
 
 .work
 {
-    padding: 80px 0;
+    padding-top: 80px;
 }
 
 .work h2
@@ -2686,10 +2673,7 @@ div.other-packages-item:hover
     line-height: 34px;
 
     max-width: 565px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-    color: #000;
+    margin-top: 20px;
 }
 
 .header video
@@ -2884,7 +2868,7 @@ div.other-packages-item:hover
     display: inline-block;
 
     width: 100%;
-    height: 4px;
+    height: 2px;
 
     content: '';
 
@@ -2930,7 +2914,7 @@ div.other-packages-item:hover
     display: inline-block;
 
     width: 100%;
-    height: 4px;
+    height: 2px;
 
     content: '';
 
@@ -3016,7 +3000,8 @@ div.other-packages-item:hover
 .footer-info p
 {
     font-size: 12px;
-    line-height: 15px;
+
+    margin-top: 9px;
 }
 
 .footer-social
@@ -3065,9 +3050,9 @@ div.other-packages-item:hover
 
     display: inline-block;
 
-    min-width: 265px;
+    min-width: 250px;
     height: 59px;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     padding: 19px 30px 0 30px;
 
     text-align: center;
@@ -3075,7 +3060,8 @@ div.other-packages-item:hover
     text-transform: uppercase;
 
     color: black;
-    border: 2px solid #000;
+    border: 2px solid #1b1b1c;
+    border-radius: 2.5px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
@@ -3093,7 +3079,6 @@ div.other-packages-item:hover
 .btn-variant
 {
     font-size: 20px;
-    font-weight: 900;
 
     display: inline-block;
 
@@ -3107,6 +3092,7 @@ div.other-packages-item:hover
 
     color: black;
     border: 2px solid #6fec85;
+    border-radius: 2.5px;
     background-color: rgba(111, 236, 133, .2);
     box-shadow: 3px 5px 4px 0 rgba(0, 0, 0, .14);
 }
@@ -3124,20 +3110,20 @@ div.other-packages-item:hover
 
 .btn-sec
 {
-    font-family: 'CerebriSans-Medium';
-    font-size: 20px;
-    font-weight: 900;
+    font-family: 'CerebriSans-Bold';
+    font-size: 14px;
 
     display: inline-block;
 
-    min-width: 265px;
+    min-width: 250px;
     height: 59px;
-    padding: 16px 40px 0 40px;
 
     text-align: center;
     letter-spacing: 2.73px;
+    text-transform: uppercase;
 
     color: white;
+    border-radius: 2.5px;
     background-color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -3240,6 +3226,7 @@ div.other-packages-item:hover
         width: 100%;
         margin-top: 20px;
         margin-left: 0;
+        padding: 40px;
     }
 
     .services-box
@@ -3343,27 +3330,25 @@ div.other-packages-item:hover
             -ms-flex-direction: column-reverse;
     }
 
-    .freebie h1
+    .freebie .container
     {
-        max-width: 555px;
+        background-position: 380px 0;
     }
 
-    .freebie h1 br
+    .freebie h1
     {
-        display: none;
+        max-width: 400px;
+        padding-top: 90px;
+    }
+
+    .freebie .lead
+    {
+        max-width: 440px;
     }
 
     .freebie-form input
     {
         width: 190px;
-    }
-
-    .freebie-form button
-    {
-        font-size: 15px;
-
-        width: 100%;
-        padding: 0 14px;
     }
 
     .packages-container
@@ -3433,10 +3418,10 @@ div.other-packages-item:hover
 
     .testimonial-slide-container
     {
-                flex-direction: column-reverse;
+                flex-direction: column;
 
-        -webkit-flex-direction: column-reverse;
-            -ms-flex-direction: column-reverse;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
     }
 
     .testimonial-avatar img
@@ -3543,24 +3528,8 @@ div.other-packages-item:hover
     }
 }
 
-@media (max-width: 850px)
-{
-    .freebie
-    {
-        height: auto;
-        padding-bottom: 50px;
-
-        background-image: none;
-    }
-}
-
 @media (max-width: 767px)
 {
-    h1
-    {
-        line-height: 50px;
-    }
-
     h1.cta-title
     {
         font-size: 32px;
@@ -3584,8 +3553,6 @@ div.other-packages-item:hover
     .benefits .container
     {
                 flex-direction: column;
-
-        margin: 55px auto 65px auto;
 
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
@@ -3632,7 +3599,7 @@ div.other-packages-item:hover
 
     .blog
     {
-        padding: 0 0 55px 0;
+        padding-top: 40px;
     }
 
     .blog h1
@@ -3707,7 +3674,7 @@ div.other-packages-item:hover
 
     .case-projects
     {
-        margin-top: 50px;
+        margin-top: 0;
     }
 
     .case-projects-row
@@ -3716,11 +3683,6 @@ div.other-packages-item:hover
 
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
-    }
-
-    .case-projects-row:last-of-type
-    {
-        margin-top: 30px;
     }
 
     .case-study-project + .case-study-project
@@ -3821,7 +3783,26 @@ div.other-packages-item:hover
 
     .freebie
     {
-        padding-top: 50px;
+        margin-top: 30px;
+    }
+
+    .freebie .container
+    {
+        height: auto;
+
+        background-position: 200px 0;
+        background-size: 40%;
+    }
+
+    .freebie h1
+    {
+        max-width: 400px;
+        padding-top: 110px;
+    }
+
+    .freebie h1 br
+    {
+        display: none;
     }
 
     .freebie .lead
@@ -3831,29 +3812,21 @@ div.other-packages-item:hover
 
     .freebie-form
     {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .freebie-form input
     {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        padding-left: 0;
+
+        text-align: center;
     }
 
     .freebie-form button
     {
         margin-left: 0;
-    }
-
-    .packages
-    {
-        padding-top: 50px;
-    }
-
-    .free-consultation
-    {
-        margin-bottom: 55px;
-        padding: 55px 0;
     }
 
     .testimonials h1
@@ -3875,6 +3848,12 @@ div.other-packages-item:hover
     .testimonial-carousel
     {
         margin-top: 0;
+    }
+
+    .testimonial-avatar img
+    {
+        max-width: 128px;
+        height: auto;
     }
 
     .testimonial-text p
@@ -3904,12 +3883,6 @@ div.other-packages-item:hover
         margin-top: 20px;
     }
 
-    .testimonial-avatar img
-    {
-        max-width: 128px;
-        height: auto;
-    }
-
     .contact
     {
         padding: 55px 0 25px 0;
@@ -3933,11 +3906,6 @@ div.other-packages-item:hover
     .contact-form-row:last-of-type
     {
         margin-bottom: 0;
-    }
-
-    .work
-    {
-        padding: 0 0 15px 0;
     }
 
     .work-container
@@ -4003,11 +3971,6 @@ div.other-packages-item:hover
         padding-top: 170px;
     }
 
-    .header p
-    {
-        margin-bottom: 40px;
-    }
-
     .header video
     {
         display: none;
@@ -4039,6 +4002,7 @@ div.other-packages-item:hover
 
     .btn-normal
     {
+        margin-top: 25px;
         padding: 19px 35px 0 35px;
 
         text-transform: uppercase;
@@ -4053,8 +4017,6 @@ div.other-packages-item:hover
 
     .btn-sec
     {
-        font-size: 15px;
-
         width: 100%;
         padding: 21px 20px 0 20px;
     }
