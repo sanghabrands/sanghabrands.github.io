@@ -379,14 +379,13 @@ p
 
 p.lead
 {
+    max-width: 530px;
     margin: 0;
 }
 
 .phrase
 {
-    font-family: 'Lato', sans-serif;
     font-size: 24px;
-    font-style: italic;
     line-height: 50px;
 
     letter-spacing: 0;
@@ -465,7 +464,10 @@ textarea::placeholder
 
 .confirmation-message
 {
+    font-family: 'CerebriSans-Bold';
     font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
 
     display: block;
 
@@ -776,9 +778,14 @@ textarea::placeholder
     background-size: cover;
 }
 
+.approach h1
+{
+    max-width: 290px;
+}
+
 .approach .lead
 {
-    max-width: 305px;
+    max-width: 290px;
 }
 
 .blog
@@ -1285,6 +1292,13 @@ textarea::placeholder
     margin-top: 45px;
 }
 
+.case-projects-highlight
+{
+    width: 930px;
+    height: 230px;
+    margin: 0 0 45px 0;
+}
+
 .case-projects-row
 {
     display: -webkit-flex;
@@ -1540,11 +1554,6 @@ textarea::placeholder
     padding-top: 40px;
 }
 
-.portfolio-detail p
-{
-    font-size: 16px;
-}
-
 .portfolio-detail h2
 {
     font-family: 'CerebriSans-Light', sans-serif;
@@ -1678,8 +1687,6 @@ textarea::placeholder
 
 .portfolio-photos p
 {
-    font-size: 16px;
-
     max-width: 930px;
     margin: 0 auto;
 
@@ -1809,6 +1816,87 @@ textarea::placeholder
     visibility: visible;
 }
 
+.freebie-header
+{
+    margin-bottom: 150px;
+    padding-top: 230px;
+
+    text-align: center;
+}
+
+.freebie-header .heading
+{
+    font-family: CerebriSans-Medium;
+    font-size: 14px;
+
+    display: inline-block;
+
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.freebie-header .heading::after
+{
+    display: block;
+
+    width: 60px;
+    height: 2px;
+    margin: 8px auto;
+
+    content: '';
+    text-align: center;
+
+    border-radius: 2.5px;
+    background-color: #6506c0;
+}
+
+.freebie-header p
+{
+    margin-bottom: 35px;
+    padding: 0 20%;
+}
+
+.freebie-header h1
+{
+    margin-bottom: 20px;
+}
+
+.freebie-content
+{
+    margin-bottom: 40px;
+    padding-top: 80px;
+}
+
+.freebie-content ul
+{
+    margin: 10px 0;
+    padding: 30px;
+
+    list-style: none;
+}
+
+.freebie-content ul li
+{
+    font-size: 17px;
+}
+
+.freebie-content ul li::before
+{
+    display: inline-block;
+
+    content: '⟶';
+
+    color: #6506c0;
+}
+
+.freebie-content ul li span
+{
+    margin-left: 10px;
+}
+
 .freebie
 {
     margin-top: 80px;
@@ -1821,13 +1909,17 @@ textarea::placeholder
     background-image: url('../images/icon-brandingBrief.png');
     background-repeat: no-repeat;
     background-position: 565px 0;
-    background-size: 357px 405px;
+    background-size: 355px 405px;
 }
 
 .freebie h1
 {
-    max-width: 620px;
-    padding-top: 80px;
+    font-family: 'CerebriSans-Light', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+    max-width: 370px;
+    padding-top: 40px;
 }
 
 .freebie h1 span
@@ -1837,7 +1929,7 @@ textarea::placeholder
 
 .freebie .lead
 {
-    max-width: 540px;
+    max-width: 610px;
 }
 
 .freebie-form
@@ -2667,6 +2759,20 @@ div.other-packages-item:hover
     letter-spacing: 0;
 }
 
+.header h1::after
+{
+    display: inline-block;
+
+    width: 60px;
+    height: 2px;
+    margin: 0 0 13px 10px;
+
+    content: '';
+
+    border-radius: 2.5px;
+    background-color: #1b1b1c;
+}
+
 .header p
 {
     font-size: 22px;
@@ -3253,6 +3359,11 @@ div.other-packages-item:hover
         max-width: none;
     }
 
+    .case-projects-highlight
+    {
+        display: none;
+    }
+
     .case-study-project
     {
         width: 200px;
@@ -3330,6 +3441,11 @@ div.other-packages-item:hover
             -ms-flex-direction: column-reverse;
     }
 
+    .freebie-header p
+    {
+        padding: 0 3%;
+    }
+
     .freebie .container
     {
         background-position: 380px 0;
@@ -3337,13 +3453,13 @@ div.other-packages-item:hover
 
     .freebie h1
     {
-        max-width: 400px;
+        max-width: 350px;
         padding-top: 90px;
     }
 
     .freebie .lead
     {
-        max-width: 440px;
+        max-width: 400px;
     }
 
     .freebie-form input
@@ -3781,6 +3897,26 @@ div.other-packages-item:hover
         top: 70px;
     }
 
+    .freebie-header
+    {
+        height: auto;
+        margin-bottom: 0;
+        padding-top: 160px;
+    }
+
+    .freebie-content
+    {
+        height: auto;
+
+        background-position: 170px 80px;
+        background-size: 70%;
+    }
+
+    .freebie-content ul li
+    {
+        margin-bottom: 10px;
+    }
+
     .freebie
     {
         margin-top: 30px;
@@ -3796,7 +3932,7 @@ div.other-packages-item:hover
 
     .freebie h1
     {
-        max-width: 400px;
+        max-width: 350px;
         padding-top: 110px;
     }
 
