@@ -85,20 +85,53 @@ $('a[href*="#"]')
       }
     }
   });
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("case-study-project");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
 
-$(function() {
-    var selectedClass = "";
-    $(".fil-cat").click(function(){ 
-    selectedClass = $(this).attr("data-rel"); 
-     $("#portfolio").fadeTo(100, 0.1);
-     $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-    setTimeout(function() {
-      $("."+selectedClass).fadeIn().addClass('scale-anm');
-      $("#portfolio").fadeTo(300, 1);
-    }, 300); 
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
   });
-});
+}
 ;(function ($) {
 
   $('.carousel-carousel').slick({
@@ -114,24 +147,6 @@ $(function() {
 
   $('.carousel-arrow-prev').on('click', function(){
     $('.carousel-carousel').slick('slickPrev')
-  });
-
-})(jQuery)
-
-;(function ($) {
-
-  $('select').selectric();
-
-  $('.selectric').on('click', function(){
-    $(this).toggleClass('is-open');
-  });
-
-  $('.selectric-items li').on('click', function(){
-    $('.selectric').removeClass('is-open');
-  });
-
-  $('select').on('selectric-close', function(event, element, selectric) {
-    $('.selectric').removeClass('is-open');
   });
 
 })(jQuery)
@@ -154,7 +169,6 @@ $(function() {
   });
 
 })(jQuery)
-
 ;(function ($) {
 
   $('.work-carousel').slick({
