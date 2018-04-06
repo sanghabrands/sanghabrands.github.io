@@ -1120,6 +1120,19 @@ textarea::placeholder
     background-color: #fff;
 }
 
+.content-sidebar #mce-success-response
+{
+    display: none;
+
+    margin-top: 0;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 2.5px;
+    background: #6506c0;
+}
+
 .sidebar-amount
 {
     position: relative;
@@ -2009,6 +2022,19 @@ textarea::placeholder
     background-color: #6506c0;
 }
 
+.freebie-form #mce-success-response
+{
+    display: none;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 2.5px;
+    background: #6506c0;
+}
+
 .packages
 {
     padding-top: 80px;
@@ -2296,9 +2322,9 @@ div.packages-item:hover
 {
     position: relative;
 
-    min-height: 650px;
+    height: 530px;
     margin-top: 80px;
-    padding: 40px 0;
+    padding: 80px 0;
 
     text-align: center;
 
@@ -2318,33 +2344,12 @@ div.packages-item:hover
     color: #6fec85;
 }
 
-.contact .confirmation-message
+.contact p.lead
 {
-    position: absolute;
-    right: 0;
-    bottom: 26px;
-    left: 0;
+    max-width: 100%;
+    margin-bottom: 35px;
 
-    width: 100%;
-
-    -webkit-font-smoothing: antialiased;
-}
-
-.contact .confirmation-message::before
-{
-    position: relative;
-    top: -1px;
-
-    display: inline-block;
-
-    width: 15px;
-    height: 6px;
-    margin-right: 12px;
-
-    content: '';
-
-    border-radius: 2.5px;
-    background-color: #6fec85;
+    text-align: left;
 }
 
 .contact-form input,
@@ -2445,7 +2450,7 @@ div.packages-item:hover
 
 .contact-form .btn-normal
 {
-    border-radius: 0;
+    padding: 5px 30px 0 30px;
 }
 
 .contact-form .btn-green
@@ -2453,6 +2458,19 @@ div.packages-item:hover
     margin-top: 45px;
     margin-bottom: 64px;
     padding: 5px 40px 0 40px;
+}
+
+.contact-form #mce-success-response
+{
+    display: none;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #6506c0;
+    border-radius: 2.5px;
+    background: #6fec85;
 }
 
 .contact-form-row
@@ -2470,6 +2488,56 @@ div.packages-item:hover
 .contact-form-row:last-of-type
 {
     margin-bottom: 30px;
+}
+
+#mce-responses
+{
+    z-index: 99999;
+    top: -1.4em;
+
+    float: left;
+    clear: both;
+    overflow: hidden;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.response
+{
+    z-index: 1;
+    top: -1.5em;
+
+    float: left;
+
+    width: 100%;
+    margin: 1em 0;
+    padding: 24px 0 20px 0;
+}
+
+#mce-error-response
+{
+    display: none;
+
+    color: #fff;
+}
+
+label.error
+{
+    display: block;
+    float: none;
+
+    width: auto;
+    margin-left: 1.05em;
+    padding: .5em 0;
+
+    text-align: left;
+}
+
+.clear
+{
+    clear: both;
 }
 
 .work
@@ -4057,11 +4125,6 @@ div.other-packages-item:hover
     .contact h1
     {
         margin: 0 auto 25px 0;
-    }
-
-    .contact .confirmation-message
-    {
-        bottom: 20px;
     }
 
     .contact-form .btn-green
