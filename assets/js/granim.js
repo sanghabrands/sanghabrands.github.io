@@ -185,7 +185,7 @@ module.exports = function(timestamp) {
 
 			// Set the active transition speed to the active state one after changing state
 			if (this.isChangingState) {
-				this.activetransitionSpeed = this.states[this.activeState].transitionSpeed || 5000;
+				this.activetransitionSpeed = this.states[this.activeState].transitionSpeed || 3000;
 			}
 
 			// Resetting properties
@@ -757,7 +757,7 @@ module.exports = function() {
 		_this.activeColorDiff.push(colorDiff);
 	});
 
-	this.activetransitionSpeed = this.states[this.activeState].transitionSpeed || 5000;
+	this.activetransitionSpeed = this.states[this.activeState].transitionSpeed || 3000;
 	this.iscurrentColorsSet = true;
 };
 
