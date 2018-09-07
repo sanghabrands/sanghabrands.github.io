@@ -3154,96 +3154,6 @@ div.other-packages-item:hover
     background-image: url('../images/mobile-btn-close.svg');
 }
 
-.footer
-{
-    min-height: 99px;
-    padding: 19px 0;
-}
-
-.footer .container
-{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
-
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-            align-items: center;
-}
-
-.footer-info
-{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
-
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-            align-items: center;
-}
-
-.footer-info svg
-{
-    position: relative;
-    top: 5px;
-
-    margin-right: 17px;
-}
-
-.footer-info a:hover #main-logo path
-{
-    fill: #6506c0;
-}
-
-.footer-info p
-{
-    font-size: 12px;
-
-    margin-top: 9px;
-}
-
-.footer-social
-{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
-}
-
-.social-icon + .social-icon
-{
-    margin-left: 15px;
-}
-
-.social-icon
-{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
-
-    width: 50px;
-    height: 50px;
-
-    border: 1px solid #6fec85;
-    border-radius: 50%;
-
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-            align-items: center;
-}
-
-.social-icon:hover #icon-instagram,
-.social-icon:hover #icon-linkedin,
-.social-icon:hover #icon-facebook
-{
-    fill: #6fec85;
-}
-
 .btn-normal
 {
     font-family: 'CerebriSans-Bold';
@@ -3366,6 +3276,97 @@ div.other-packages-item:hover
 .btn-portfolio:active
 {
     background-color: white;
+}
+
+.footer
+{
+    min-height: 99px;
+    padding: 19px 0;
+}
+
+.footer .container
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer-info
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer-info svg
+{
+    position: relative;
+    top: 5px;
+
+    margin-right: 17px;
+}
+
+.footer-info a:hover #main-logo path
+{
+    fill: #6506c0;
+}
+
+.footer-info p
+{
+    font-size: 12px;
+    line-height: 18px;
+
+    margin-top: 9px;
+}
+
+.footer-social
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+.social-icon + .social-icon
+{
+    margin-left: 15px;
+}
+
+.social-icon
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #6fec85;
+    border-radius: 50%;
+
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+
+.social-icon:hover #icon-instagram,
+.social-icon:hover #icon-linkedin,
+.social-icon:hover #icon-facebook
+{
+    fill: #6fec85;
 }
 
 @media (max-width: 1024px)
@@ -4206,30 +4207,6 @@ div.other-packages-item:hover
         display: none;
     }
 
-    .footer .container
-    {
-                flex-direction: column;
-
-        padding: 10px 15px;
-
-        text-align: center;
-
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-    }
-
-    .footer-info
-    {
-        display: block;
-
-        margin-bottom: 20px;
-    }
-
-    .footer-social
-    {
-        margin: 0 auto;
-    }
-
     .btn-normal
     {
         margin-top: 25px;
@@ -4257,5 +4234,29 @@ div.other-packages-item:hover
 
         width: 100%;
         padding: 19px 20px 0 20px;
+    }
+
+    .footer .container
+    {
+                flex-direction: column;
+
+        padding: 10px 15px;
+
+        text-align: center;
+
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+
+    .footer-info
+    {
+        display: block;
+
+        margin-bottom: 20px;
+    }
+
+    .footer-social
+    {
+        margin: 0 auto;
     }
 }
